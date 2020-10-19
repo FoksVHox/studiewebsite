@@ -19,8 +19,4 @@ jobs:
           local_folder: src
           cleanup: false
           include: ''
-          exclude: |
-            - node_modules/**
-            - node_modules/**/.*
-            - .git/**
           pasive: true # optional
