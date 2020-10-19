@@ -1,0 +1,7 @@
+.github/*
+node_modules/*
+.gitignore
+LICENSE
+README.md
+package-lock.json
+script.js
