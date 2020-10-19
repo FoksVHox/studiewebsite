@@ -11,6 +11,6 @@ jobs:
           user: ${{ secrets.FTP_USERNAME }} # Ftp user Ex:
           password: ${{ secrets.FTP_PASSWORD }} # Ftp password Ex:
           host: ${{ secrets.FTP_SERVER }} # Ftp host Ex:
-          path: . # Folder to deploy Ex: apps/frontend/dist or dist
+          path: / # Folder to deploy Ex: apps/frontend/dist or dist
           into: src # Where to place the files in your ftp
           cleanupExisting: true # (Optional), Remove already existing files inside FTP destination folder (`into` parameter)
