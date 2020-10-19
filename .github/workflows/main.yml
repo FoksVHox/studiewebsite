@@ -19,10 +19,11 @@ jobs:
       - uses: actions/checkout@v2.1.0
         with:
           fetch-depth: 2
-      - name: FTP-Deploy-Action
-        uses: SamKirkland/FTP-Deploy-Action@3.1.1
-        with:
-          ftp-server: ftps://elev.htxroskilde.dk
-          ftp-username: 5700545@rts-365.dk
-          ftp-password: ${{ secrets.FTP_PASSWORD }}
-          git-ftp-args: --dry-run
+      - name: FTP-Deploy 
+      - uses: kevinpainchaud/simple-ftp-deploy-action@v1.2.1
+      - with:
+          ftp_host: ${{ secrets.FTP_HOST }}
+          ftp_username: ${{ secrets.FTP_USERNAME }}
+          ftp_password: ${{ secrets.FTP_PASSWORD }}
+          local_source_dir: "./"
+          dist_target_dir: "."
