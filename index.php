@@ -1,4 +1,6 @@
 <?php
+    require '_init.php';
+    $title = 'Forside';
     include_once 'includes/nav.php';
 ?>
 
