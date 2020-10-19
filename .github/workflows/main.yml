@@ -6,10 +6,23 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v1
-    - name: git-ftp push
-      uses: sebastianpopp/git-ftp-action@releases/v3
-      with:
-        url: ${{ secrets.FTP_SERVER }}
-        user: ${{ secrets.FTP_USERNAME }}
+    - uses: actions/checkout@v2
+    - name: FTP Deployer
+    - uses: sand4rt/ftp-deployer@v1.1
+    - with:
+        # FTP host URL like: ftp.host.com
+        host: ${{ secrets.FTP_HOST }}
+        # FTP port default is: 21
+        port: 21 # optional
+        # Ftp username
+        username: ${{ secrets.FTP_USERNAME }}
+        # Ftp password
         password: ${{ secrets.FTP_PASSWORD }}
+        # The remote folder location of your FTP server
+        remote_folder: ${{ secrets.FTP_REMOTE_FOLDER }} # optional
+        # The local folder location
+        local_folder: dist # optional, default is dist
+        # Remove existing files inside FTP remote folder
+        cleanup: false # optional
+        include: '' # optional
+        pasive: true
