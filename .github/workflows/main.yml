@@ -23,6 +23,6 @@ jobs:
         uses: SamKirkland/FTP-Deploy-Action@3.1.1
         with:
           ftp-server: ftps://elev.htxroskilde.dk:21
-          ftp-username: 5700545
+          ftp-username: 5700545@rts-365.dk
           ftp-password: ${{ secrets.FTP_PASSWORD }}
           git-ftp-args: --dry-run
