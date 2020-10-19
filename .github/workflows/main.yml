@@ -1,22 +1,16 @@
-name: CD
-on:
-  push:
-    branches: [ master ]
+name: Deploy app
+on: [push]
 jobs:
-  build:
+  deploy:
     runs-on: ubuntu-latest
-    name: FTP-Deploy-Action
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v2
-      - name: "FTP Deployer"
-        uses: sand4rt/ftp-deployer@v1.1
+      - uses: actions/checkout@master
+      - name: Deploy app
+        uses: isthatcentered/dist-to-ftp@master
         with:
-          host: ${{ secrets.FTP_SERVER }}
-          port: 21 # optional
-          username: ${{ secrets.FTP_USERNAME }}
-          password: ${{ secrets.FTP_PASSWORD }}
-          local_folder: src
-          cleanup: false
-          include: ''
-          pasive: true # optional
+          user: ${{ secrets.FTP_USERNAME }} # Ftp user Ex:
+          password: ${{ secrets.FTP_PASSWORD }} # Ftp password Ex:
+          host: ${{ secrets.FTP_HOST }} # Ftp host Ex:
+          path: src # Folder to deploy Ex: apps/frontend/dist or dist
+          into: . # Where to place the files in your ftp
+          cleanupExisting: true # (Optional), Remove already existing files inside FTP destination folder (`into` parameter)
