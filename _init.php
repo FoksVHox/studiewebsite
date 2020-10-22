@@ -52,6 +52,6 @@ if (Config::i()->isDevelopment()) {
     ini_set('display_startup_errors', 1);
     error_reporting(E_ALL);
 }
-
-// Call Converter
-Converter
+if($_SERVER['REQUEST_URI'] == '/2020/jimmih20/docs'){
+    Converter::i()->run();
+}
