@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <title><?=$title?></title>
-        <link href="style.css" rel="stylesheet">
+        <link href="/2020/jimmih20/style.css" rel="stylesheet">
         <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
     </head>
     <body>

@@ -1,5 +1,6 @@
 <?php
     $title = 'Artikler';
+    require '../_init.php';
     include_once '../includes/nav.php';
 ?>
 
