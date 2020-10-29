@@ -18,9 +18,11 @@ class Converter
         print_r($files);
          for( $x = 0; $x <= count($files)-1; $x++)
          {
-             readfile('../docs/src/'.$files[$x]);
+             $files[$x] = explode('.', $files[$x]);
+             array_pop($files[$x]);
+             readfile('../docs/src/'.$files[$x][0]);
              //chmod('../docs',0777);
-             fwrite(fopen('../docs/'.$files[$x], 'w'),'does it wor?k');
+             fwrite(fopen('../docs/'.$files[$x][0], 'w'),'does it wor?k');
          }
     }
 }
