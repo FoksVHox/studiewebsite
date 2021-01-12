@@ -4,24 +4,21 @@ name: CI
 
 # Controls when the action will run. Triggers the workflow on push or pull request
 # events but only for the master branch
-on:
-  push:
-    branches: [ master ]
-  pull_request:
-    branches: [ master ]
-
-# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+on: push
 jobs:
-  FTP-Deploy-Action:
-    name: FTP-Deploy-Action
+  web-deploy:
+    name: Deploy
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2.1.0
-        with:
-          fetch-depth: 2
-      - name: FTP-Deploy-Action
-        uses: SamKirkland/FTP-Deploy-Action@3.1.1
-        with:
-          ftp-server: ftps://elev.htxroskilde.dk
-          ftp-username: 5700545
-          ftp-password: ${{ secrets.FTP_PASSWORD }}
+    - name: Get latest code
+      uses: actions/checkout@v2.3.2
+    
+    - name: Upload
+      uses: SamKirkland/FTP-Deploy-Action@4.0.0
+      with:
+        server: elev.htxroskilde.dk
+        username: ${{ secrets.ftp_username }}
+        password: ${{ secrets.ftp_password }}
+        log-level: verbose
+        protocol: ftps
+        port: 21
