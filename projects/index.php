@@ -6,7 +6,7 @@
 <div class="px-2 py-4 flex space-x-2">
     <a href="../skema.pdf">
 
-        <div class="max-w-sm rounded overflow-hidden shadow-lg bg-gray-200">
+        <div class="max-w-sm rounded overflow-hidden shadow-lg border border-gray-600 bg-gray-200">
             <div class="px-6 py-4">
                 <div class="font-bold text-xl mb-2">Website</div>
                 <p class="text-gray-700 text-base">
@@ -23,7 +23,7 @@
     </a>
     <a href="./infosite/index.php">
 
-        <div class="max-w-sm rounded overflow-hidden shadow-lg bg-gray-200">
+        <div class="max-w-sm rounded overflow-hidden shadow-lg border border-gray-600 bg-gray-200">
             <div class="px-6 py-4">
                 <div class="font-bold text-xl mb-2">Infosite</div>
                 <p class="text-gray-700 text-base">
