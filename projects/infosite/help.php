@@ -10,7 +10,12 @@ Layout::i()->nav();
 
     <div class="flex flex-row mt-5 w-full h-full space-x-2">
         <div class="bg-gray-200 w-1/2 h-full rounded-lg py-2 px-3">
-            <h2 class="text-xl font-medium">Redbarnet - SletDet</h2>
+            <a href="https://redbarnet.dk/sletdet/" target="_blank">
+                <h2 class="text-xl font-medium">Redbarnet - SletDet</h2>
+            </a>
+            <strong>Gratis og fortrolig rådgivning om ubehagelig oplevelser og krænkelser på nettet</strong>
+            <p>Du kan kontakte rådgiverne fra SletDet, hvis du selv er ung, eller hvis du har været vidne til, at et barn har oplevet noget ubehageligt på nettet. Det kan være, at private, grænseoverskridende eller krænkende billeder eller videoer bliver delt uden samtykke – altså uden, at man har givet lov. Det kan også handle om andre ubehagelige oplevelser, som mobning, hacking eller stalking. Hos SletDet kan du få hjælp og råd til, hvordan du håndterer situationen og får stoppet de digitale krænkelser.</p>
+            <a href="https://redbarnet.dk/sletdet/" class="text-blue-500 font-medium">Redbarnet - SletDet</a>
         </div>
         <div class="bg-gray-200 w-1/2 h-full rounded-lg py-2 px-3">
             <h2 class="text-xl font-medium">Kontakt os</h2>
@@ -51,10 +56,10 @@ Layout::i()->nav();
                     <button class="rounded-md bg-gray-800 mt-4 text-white p-2">Send!</button>
                 </form>
 
-                <div class="bg-gray-400 rounded-lg">
+                <div class="bg-red-500 rounded-lg">
                     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:py-8 lg:px-8">
-                        <h1>DISCLAIMER:</h1>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque autem consequuntur earum fuga, incidunt, laboriosam minima natus nemo nisi non odit rem voluptates? Asperiores magnam nulla praesentium recusandae rerum sed.
+                        <h1><strong>DISCLAIMER:</strong></h1>
+                        Denne formular virker ikke, og denne side er et skole projekt, derfor kan du ikke modtage nogen form for hjælp her. Vi råder til at kontakte en der hjælpe dig.
                     </div>
                 </div>
 
