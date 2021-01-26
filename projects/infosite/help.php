@@ -20,7 +20,7 @@ Layout::i()->nav();
         <div class="bg-gray-200 w-1/2 h-full rounded-lg py-2 px-3">
             <h2 class="text-xl font-medium">Kontakt os</h2>
             <div class="mt-4">
-                <form action="sendmail.php" method="post">
+                <form action="#" method="post">
                         <div class="flex space-x-2">
                             <div class="w-1/2">
                                 <label for="company_website" class="block text-sm font-medium text-gray-700">
