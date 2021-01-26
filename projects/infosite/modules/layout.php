@@ -13,7 +13,7 @@ class Layout
             <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
             <!-- Adding the Config::i()->getVersion() thing makes caching way easier to deal with. In development mode, the version will be a randomized string on each visit, to completely bypass the cache -->
-            <link href="/css/style.css" rel="stylesheet">
+            <link href="/2020/jimmih20/projects/css/style.css" rel="stylesheet">
             <!--<link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
             <link rel="stylesheet" href="https://unpkg.com/@tailwindcss/custom-forms@0.2.1/dist/custom-forms.min.css">-->
             <title><?=Config::i()->getName()?></title>
