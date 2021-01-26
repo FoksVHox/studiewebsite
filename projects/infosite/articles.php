@@ -6,7 +6,7 @@ Layout::i()->nav();
 
 <div class="grid grid-cols-6 gap-6 w-full">
 
-	<a href="/articles/positive-some.php">
+	<a href="http://elev.htxroskilde.dk/2020/jimmih20/projects/infosite/articles/positive-some.php">
 		<div class="bg-gray-300 rounded-lg shadow-lg p-3 h-full">
 
             <strong>
@@ -19,7 +19,7 @@ Layout::i()->nav();
 		</div>
 	</a>
 
-	<a href="/articles/mental-health.php">
+	<a href="http://elev.htxroskilde.dk/2020/jimmih20/projects/infosite/articles/mental-health.php">
 		<div class="bg-gray-300 rounded-lg shadow-lg p-3">
 
             <strong>
